@@ -1,0 +1,40 @@
+#input-form{
+	width:50%;
+	margin: 1px auto;
+	display: grid;
+	padding: 10px;
+	box-shadow: 1px 1px 6px 1px black;
+}
+
+.background{
+	background-color: grey;
+}
+
+.transparent-back{
+	background-color: transparent;
+}
+
+#form-heading{
+	width:100%;
+	grid-row:1;
+}
+
+#input-titles{
+	width:100%;
+}
+
+#input-category{
+	width:100%;
+}
+
+#textarea-descrp{
+	width:100%;
+	padding: 0px;
+	resize: none;
+}
+
+#form-btn{
+	width:100px;
+	justify-self: right;
+
+}

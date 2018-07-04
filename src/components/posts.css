@@ -1,0 +1,22 @@
+.post-container{
+	width:50%;
+	margin: 2vw auto;
+	display: grid;
+	padding: 10px;
+	box-shadow: 1px 1px 6px 1px black;
+	grid-template-columns: 100%;
+}
+
+#btn-container{
+	grid-row: 2;
+}
+
+.posts-title{
+	grid-row:3;
+	border:1px dashed;
+}
+
+.posts-description{
+	grid-row:4;
+	border:1px dashed;
+}

@@ -1,0 +1,12 @@
+.addNew{
+	width:50%;
+	margin:1px auto;
+	display: grid;
+	padding: 10px;
+	justify-items: right;
+}
+
+#add-btn{
+	grid-row:1;
+	box-shadow: 1px 1px 4px 0px black;
+}

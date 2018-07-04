@@ -1,0 +1,17 @@
+
+.postsProto-container{
+	width:50%;
+	margin: 1px auto;
+	display: grid;
+	padding: 10px;
+	grid-template-columns: 60% 40%;
+	box-shadow: 1px 1px 6px 1px black;
+}
+
+.post-title{
+	grid-column: 1;
+}
+
+.post-catg{
+	grid-column: 2;
+}
