@@ -15,7 +15,6 @@ class Posts extends Component{
 		})
 		console.log(this.props)
 		this.props.data.list = tmp;
-		this.props.data.id--;
 		this.props.history.push("/Home");
 	}
 
