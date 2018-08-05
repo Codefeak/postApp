@@ -20,12 +20,16 @@ class PostProto extends Component {
 							<span className="post-catg" key={Math.random()} id={item.id}>{item.category}</span>
 						</div>
 						<div className = "LSC-container" >
-						<span>0</span><input type="button" value="Like"/>
-						<span>0</span><input type="button" value="Share"/>
-						<span>0</span><input type="button" value="Comment"/>
+						<span>0</span><input className="LSC-btn" type="button" value="Like"/>
+						<span>0</span><input className="LSC-btn" type="button" value="Share"/>
+						<span>0</span><input className="LSC-btn" type="button" value="Comment"/>
 					</div>
 					<div className = "comment-container">
-						<label htmlFor="comments">Comment</label><input id="comments" type="text"/>
+						<label htmlFor="comments">Comment</label>
+						<div className="comment-input-container">
+							<input id="comments" type="text"/>
+							<span>enter</span>
+						</div>
 					</div>
 						
 					</div>
