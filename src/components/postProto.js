@@ -14,9 +14,20 @@ class PostProto extends Component {
 
 	render(){
 		return(this.props.data.list.map((item,i)=>{
-			return(<div className="postsProto-container" onClick={this.handleBtnClick} key={Math.random()} id={item.id}>
-						<span className="post-title" key={Math.random()} id={item.id}>{item.title}</span>
-						<span className="post-catg" key={Math.random()} id={item.id}>{item.category}</span>
+			return(	<div className="postsProto-main-container">
+						<div className="postsProto-container" onClick={this.handleBtnClick} key={Math.random()} id={item.id}>
+							<span className="post-title" key={Math.random()} id={item.id}>{item.title}</span>
+							<span className="post-catg" key={Math.random()} id={item.id}>{item.category}</span>
+						</div>
+						<div className = "LSC-container" >
+						<span>0</span><input type="button" value="Like"/>
+						<span>0</span><input type="button" value="Share"/>
+						<span>0</span><input type="button" value="Comment"/>
+					</div>
+					<div className = "comment-container">
+						<label htmlFor="comments">Comment</label><input id="comments" type="text"/>
+					</div>
+						
 					</div>
 					)
 
