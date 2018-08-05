@@ -1,9 +1,10 @@
 #input-form{
 	width:90%;
-	margin: 1px auto;
 	display: grid;
-	padding: 10px;
-	box-shadow: 1px 1px 6px 1px black;
+	margin: 0.7vw auto;
+	background-color:white;
+	box-shadow:0px 0px 2px 0px #FF5722;
+	border-radius:0.5vw;
 }
 
 .background{
@@ -18,9 +19,13 @@
 	width:100%;
 	grid-row:1;
 }
+#input-form label{
+	display: flex;
+	margin: 1vw;
+}
 
 #input-titles{
-	width:100%;
+	flex-grow: 1;
 }
 
 #input-category{
@@ -28,13 +33,17 @@
 }
 
 #textarea-descrp{
-	width:100%;
-	padding: 0px;
+	margin:1vw;
 	resize: none;
 }
 
-#form-btn{
-	width:100px;
+#input-form button{
+	width:fit-content;
+	margin:1vw;
 	justify-self: right;
+	background-color: transparent;
+}
 
+#input-form button:hover{
+	background-color: orange;
 }

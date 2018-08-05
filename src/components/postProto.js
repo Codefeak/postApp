@@ -18,11 +18,12 @@ class PostProto extends Component {
 						<div className="postsProto-container" onClick={this.handleBtnClick} key={Math.random()} id={item.id}>
 							<span className="post-title" key={Math.random()} id={item.id}>{item.title}</span>
 							<span className="post-catg" key={Math.random()} id={item.id}>{item.category}</span>
+							<span className="post-descrp" key={Math.random()} id={item.id}>{item.description}</span>
 						</div>
 						<div className = "LSC-container" >
-						<span>0</span><input className="LSC-btn" type="button" value="Like"/>
-						<span>0</span><input className="LSC-btn" type="button" value="Share"/>
-						<span>0</span><input className="LSC-btn" type="button" value="Comment"/>
+						<span>0</span><input className="common-btn" type="button" value="Like"/>
+						<span>0</span><input className="common-btn" type="button" value="Share"/>
+						<span>0</span><input className="common-btn" type="button" value="Comment"/>
 					</div>
 					<div className = "comment-container">
 						<label htmlFor="comments">Comment</label>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Proptypes from 'prop-types';
 import './form.css';
 
 class Form extends Component{
@@ -16,20 +17,25 @@ class Form extends Component{
 		return(
 			<form id="input-form" className="transparent-back" onSubmit={this.props.Submit}>
 				<h1 id="form-heading" className="transparent-back" >Heading</h1>
-				<input 
-					id="input-titles" 
-					className="transparent-back" 
-					type="text" 
-					name="title"
-					onChange = {this.props.Change}
-					value={this.props.title}/>
-				<input 
-					id="input-category" 
-					className="transparent-back" 
-					type="text" 
-					name="category"
-					onChange = {this.props.Change}
-					value={this.props.category}/>
+				<label>Title :
+					<input 
+						id="input-titles" 
+						className="transparent-back" 
+						type="text" 
+						name="title"
+						onChange = {this.props.Change}
+						value={this.props.title}/>
+				</label>
+				<label> Category:
+					<input 
+						id="input-category" 
+						className="transparent-back" 
+						type="text" 
+						name="category"
+						onChange = {this.props.Change}
+						value={this.props.category}/>
+				</label>
+				<label htmlFor="textarea-descrip">Description :</label>
 				<textarea 
 					name="description" 
 					className="transparent-back" 
@@ -39,10 +45,16 @@ class Form extends Component{
 					cols="30" 
 					rows="10">
 				</textarea>
-				<button type="submit" onClick={this.handleBtnClick} >Add New Post</button>
+				<button id="form-btn "type="submit" onClick={this.handleBtnClick} >Add Post</button>
 			</form>
 		)
 	}
 }
 
 export default Form;
+
+Form.propTypes = {
+	title: Proptypes.string.isRequired,
+	category:Proptypes.string.isRequied,
+	Change:Proptypes.func.isRequired
+}
